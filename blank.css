@@ -1,1 +1,44 @@
+body {
+    background-color: darkslategrey;
+}
 
+h1 {
+    color: aqua;
+    background-color:darkgreen;
+}
+
+pre {
+    color: pink;
+    border-style: groove;
+    border-radius:10px;
+    background-color:darkblue;
+}
+
+h2 {
+    color:yellow;
+    font-family:Papyrus;
+}
+
+h3 {
+    color:antiquewhite;
+}
+
+p {
+    color: hotpink;
+    background-color:black;
+    margin:3px;
+    border-style:double;
+}
+
+b {
+    color:tan;
+}
+
+li {
+    color:orange;
+}
+
+i {
+    color:snow;
+    
+}
