@@ -28,6 +28,7 @@ p {
     background-color:black;
     margin:3px;
     border-style:double;
+    padding:5px;
 }
 
 b {
