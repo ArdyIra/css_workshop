@@ -22,8 +22,12 @@
 
     <link rel="stylesheet" href="./blank.css">
 
-    <style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
 
+
+    <style>
     </style>
 
 </head>
@@ -292,7 +296,7 @@
 
     <form>
         <p>Click button below to move the image to right</p>
-        <img id="myImage" src="./arrow.jpg" /><br />        
+        <img id="myImage" src="./arrow.jpg" /><br />
         <input type="button" value="Click Me" onclick="moveRight();" />
     </form>
 
@@ -310,6 +314,37 @@
         }
 
         window.onload = init;
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("h1").mouseover(function () { $(this).animate({ padding: '0px 0px 0px 30%' }, 'slow') });
+            $("h1").mouseout(function () { $(this).animate({ padding: '0px 0px 0px 0px' }, 'slow') });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            function h2clor() {
+                $('h2').animate({ color: "red" }, 500);
+                $('h2').animate({ color: "yellow" }, {
+                    duration: 500,
+                    complete: h2clor
+                });
+            }
+            h2clor();
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('p').mouseenter(function () {
+                $(this).fadeTo('slow', 1);
+            }).mouseleave(function () {
+                $(this).fadeTo('slow', 0.25);
+            });
+        });
     </script>
 
 </body>
